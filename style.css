@@ -12,6 +12,7 @@ h1 {
 
 #container {
     border: 5px solid aliceblue;
+    border-radius: 15px;
     padding: 10px;
     width: 700px;
     height: 700px;
@@ -26,6 +27,7 @@ h1 {
     padding-bottom: calc(6.25% - 4px);
     background-color: aliceblue;
     transition: 0.5s;
+    border-radius: 5px;
 }
 
 #main {
