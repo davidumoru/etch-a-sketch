@@ -12,3 +12,11 @@ for (let x = 0; x < 16; x++) {
     container.appendChild(grid);
   }
 }
+
+const reset = document.querySelector("#reset");
+reset.addEventListener("click", () => {
+  const grids = document.querySelectorAll(".grid-item");
+  grids.forEach((grid) => {
+    grid.style.backgroundColor = "aliceblue";
+  });
+});
