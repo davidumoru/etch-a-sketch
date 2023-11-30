@@ -18,11 +18,41 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     gap: 4px;
-    margin: 0 auto;
+
 }
 
 .grid-item {
     flex: 0 0 calc(6.25% - 4px);
     padding-bottom: calc(6.25% - 4px);
     background-color: aliceblue;
+    transition: 0.5s;
+}
+
+#main {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    padding: 10px 50px;
+    margin: 15px;
+    border: 2px solid aliceblue;
+    border-radius: 10px;
+    color: aliceblue;
+    background-color: #191918;
+    font-size: 20px;
+    transition: transform 0.1s ease-in-out;
+}
+
+button:hover{
+  transform: scale(1.05);
+}
+
+#settings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 70px 0;
 }
