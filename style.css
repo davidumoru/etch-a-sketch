@@ -11,7 +11,7 @@ h1 {
 }
 
 #container {
-    border: 5px solid aliceblue;
+    border: 3px dashed  aliceblue;
     border-radius: 15px;
     padding: 10px;
     width: 700px;
