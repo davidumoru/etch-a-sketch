@@ -9,3 +9,20 @@ h1 {
     color:aliceblue;
     font-size: 50px;
 }
+
+#container {
+    border: 5px solid aliceblue;
+    padding: 10px;
+    width: 700px;
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin: 0 auto;
+}
+
+.grid-item {
+    flex: 0 0 calc(6.25% - 4px);
+    padding-bottom: calc(6.25% - 4px);
+    background-color: aliceblue;
+}
