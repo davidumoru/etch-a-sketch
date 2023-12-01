@@ -81,13 +81,13 @@ const activateButton = (newMode) => {
 
   if (newMode === "rainbow") {
     rainbowBtn.classList.add("active");
-    rainbowBtn.style.backgroundColor = "#FFD200"
+    rainbowBtn.style.backgroundColor = "#FCB31B"
   } else if (newMode === "color") {
     colorBtn.classList.add("active");
-    colorBtn.style.backgroundColor = "#FFD200"
+    colorBtn.style.backgroundColor = "#FCB31B"
   } else if (newMode === "eraser") {
     eraserBtn.classList.add("active");
-    eraserBtn.style.backgroundColor = "#FFD200"
+    eraserBtn.style.backgroundColor = "#FCB31B"
   }
 };
 
