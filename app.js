@@ -70,18 +70,24 @@ resetBtn.addEventListener("click", () => {
 const activateButton = (newMode) => {
   if (currentMode === "rainbow") {
     rainbowBtn.classList.remove("active");
+    rainbowBtn.style.backgroundColor = "#191918"
   } else if (currentMode === "color") {
     colorBtn.classList.remove("active");
+    colorBtn.style.backgroundColor = "#191918"
   } else if (currentMode === "eraser") {
     eraserBtn.classList.remove("active");
+    eraserBtn.style.backgroundColor = "#191918"
   }
 
   if (newMode === "rainbow") {
     rainbowBtn.classList.add("active");
+    rainbowBtn.style.backgroundColor = "#FFD200"
   } else if (newMode === "color") {
     colorBtn.classList.add("active");
+    colorBtn.style.backgroundColor = "#FFD200"
   } else if (newMode === "eraser") {
     eraserBtn.classList.add("active");
+    eraserBtn.style.backgroundColor = "#FFD200"
   }
 };
 
