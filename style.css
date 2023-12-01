@@ -1,6 +1,9 @@
+* {
+    font-family: 'North Way', sans-serif; 
+}
+
 body {
     background-color: #191918;
-    font-family: 'North Way', sans-serif;
     margin: 0;
 }
 
