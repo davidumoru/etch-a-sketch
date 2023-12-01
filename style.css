@@ -52,6 +52,11 @@ button:hover{
   transform: scale(1.05);
 }
 
+button#reset:active {
+    background-color: #e63939;
+    border: 2px solid black;
+}
+
 #settings {
     display: flex;
     flex-direction: column;
