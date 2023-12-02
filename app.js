@@ -37,6 +37,7 @@ const setupGrid = () => {
   for (let x = 0; x < currentSize; x++) {
     for (let j = 0; j < currentSize; j++) {
       const grid = document.createElement("div");
+      document.documentElement.style.setProperty("--grid-size", currentSize);
       grid.className = "grid-item";
       grid.addEventListener("mouseover", () => changeColor(grid));
       container.appendChild(grid);

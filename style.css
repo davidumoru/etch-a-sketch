@@ -26,8 +26,8 @@ h1 {
 }
 
 .grid-item {
-    flex: 0 0 calc(6.25% - 4px);
-    padding-bottom: calc(6.25% - 4px);
+    flex: 0 0 calc(100% / var(--grid-size) - 4px);
+    padding-bottom: calc(100% / var(--grid-size) - 4px);
     background-color: aliceblue;
     transition: 0.5s;
     border-radius: 5px;
