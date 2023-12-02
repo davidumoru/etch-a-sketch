@@ -67,6 +67,21 @@ resetBtn.addEventListener("click", () => {
   });
 });
 
+const sizeValue = document.querySelector("#sizeValue");
+const sizeSlider = document.querySelector("#sizeSlider");
+
+sizeSlider.addEventListener("input", () => {
+  const newSize = parseInt(sizeSlider.value);
+  sizeValue.textContent = `${newSize} x ${newSize}`;
+  setCurrentSize(newSize);
+  resetGrid();
+});
+
+const resetGrid = () => {
+  container.innerHTML = "";
+  setupGrid();
+};
+
 const activateButton = (newMode) => {
   if (currentMode === "rainbow") {
     rainbowBtn.classList.remove("active");
