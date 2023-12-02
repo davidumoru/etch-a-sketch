@@ -30,7 +30,7 @@ h1 {
     padding-bottom: calc(100% / var(--grid-size) - 4px);
     background-color: aliceblue;
     transition: 0.5s;
-    border-radius: 5px;
+    border-radius: 15%;
 }
 
 #main {
