@@ -107,6 +107,35 @@ const activateButton = (newMode) => {
   }
 };
 
+const saveBtn = document.querySelector("#save");
+saveBtn.addEventListener("click", () => {
+  saveAsImage()
+});
+
+const saveAsImage = () => {
+  setTimeout(() => {
+    const canvas = document.createElement("canvas");
+    const ctx = canvas.getContext("2d");
+
+    // Set the canvas size based on the container size
+    canvas.width = container.offsetWidth;
+    canvas.height = container.offsetHeight;
+
+    // Draw each grid item on the canvas
+    const grids = document.querySelectorAll(".grid-item");
+    grids.forEach((grid) => {
+      const rect = grid.getBoundingClientRect();
+      ctx.fillStyle = grid.style.backgroundColor;
+      ctx.fillRect(rect.left, rect.top, rect.width, rect.height);
+    });
+
+    const link = document.createElement("a");
+    link.href = canvas.toDataURL("image/png");
+    link.download = "etch-a-sketch.png";
+    link.click();
+  }, 100); 
+};
+
 window.onload = () => {
   setupGrid(DEFAULT_SIZE);
   activateButton(DEFAULT_MODE);
